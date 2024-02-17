@@ -40,8 +40,7 @@ body{
 /* header */
 
 .header{
-    position: fixed;
-    z-index: 2;
+    
 }
 
 .header__container{
@@ -79,6 +78,7 @@ body{
 
 .hero{
     position: relative;
+    top: -100px;
 }
 
 .hero__container{
@@ -89,30 +89,33 @@ body{
 
 .hero__img{
     width: 50%;
+    height: 50%;
     margin-top: 150px;
-    object-fit: cover;
-    z-index: 2;
-    position: relative;
 }
 
 .hero__img img{
-    width: 120%;
-    position: absolute;
-    right: -100px;
+    width: 110%;
+
 }
 
 
 .hero__info{
     width: 60%;
     max-width: 738px;
-    padding: 225px 0;
+    padding: 225px 15px;
     background: var(--accent--color);
+    z-index: -1;
 }
+
+.hero__content{}
+
+
 
 .hero__title{
     font-size: 78px;
     font-weight: 700;
     margin-bottom: 32px;
+    z-index: 2;
 }
 
 .hero__title span{
