@@ -33,13 +33,16 @@ body{
 }
 
 .container{
-    max-width: 1296px;
+    max-width: 1266px;
     margin: 0 auto;
+    
 }
 
 /* header */
 
 .header{
+    position: relative;
+    z-index: 10;
     
 }
 
@@ -91,11 +94,11 @@ body{
     width: 50%;
     height: 50%;
     margin-top: 150px;
+    z-index: 2;
 }
 
 .hero__img img{
     width: 110%;
-
 }
 
 
@@ -104,10 +107,14 @@ body{
     max-width: 738px;
     padding: 225px 15px;
     background: var(--accent--color);
-    z-index: -1;
 }
 
-.hero__content{}
+.hero__content{
+    position: relative;
+    z-index: 3;
+}
+
+
 
 
 
@@ -115,7 +122,6 @@ body{
     font-size: 78px;
     font-weight: 700;
     margin-bottom: 32px;
-    z-index: 2;
 }
 
 .hero__title span{
@@ -136,3 +142,67 @@ body{
     font-size: 16px;
     font-weight: 700;
 }
+
+.worked__title{
+    font-size: 55px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.worked__companies{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.companies__item{
+    flex: 0 1 30%;
+}
+
+.companies__number{
+    font-size: 117px;
+}
+
+.companies__name{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.green{
+    color: green;
+}
+
+.blue{
+    color: blue;
+}
+
+.pink{
+    color: pink;
+}
+
+
+.companies__text{
+    color: var(--text-blue);
+    margin-top: 22px;
+}
+
+
+/* philosophy */
+
+.philosophy__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.philosophy__left{
+    padding: 120px 0;
+    flex-basis: 48%;
+}
+
+.philosophy__right{
+    flex-basis: 48%;
+    background: url('../img/1.jpg') ;
+    object-fit: fill;
+
+}
+

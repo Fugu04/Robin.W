@@ -1,0 +1,12 @@
+@media screen and (max-width: 768px) {
+    .header__menu{
+        display: none;
+    }
+    .worked__companies{
+        flex-direction: column;
+    }
+    .worked__container{
+    padding: 0 15px;
+  }
+
+}
