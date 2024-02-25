@@ -20,6 +20,8 @@ a{
     --purple: #5221E6;
     --accent--color: #181823;
     --text-blue: #8491A0;
+    --peach--accent: #FFF3E4;
+    --text-paragraph: #5B6876;
 
 }
 
@@ -35,7 +37,12 @@ body{
 .container{
     max-width: 1266px;
     margin: 0 auto;
-    
+    padding: 15px 0;
+}
+
+.title{
+    font-size: 55px;
+    font-weight: 700;
 }
 
 /* header */
@@ -188,8 +195,13 @@ body{
 
 
 /* philosophy */
+.philosophy{
+    color: var(--accent--color);
+    background: var(--peach--accent);
+}
 
 .philosophy__container{
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
 }
@@ -201,8 +213,63 @@ body{
 
 .philosophy__right{
     flex-basis: 48%;
-    background: url('../img/1.jpg') ;
-    object-fit: fill;
+    position: relative;
+}
+
+.philosophy__right img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.philosophy__title{
+    font-size: 55px;
+    font-weight: 700;
+    color: var(--accent--color);
+    margin-bottom: 24px;
+}
+
+/* skillset */
+.skillset{
+    padding: 120px 15px;
 
 }
+
+.skillset__container{
+    display: flex;
+    gap: 40px;
+}
+
+.skillset__text{
+    max-width: 366px;
+}
+
+.skillset__title{
+    margin-bottom: 24px;
+}
+
+.skillset p{
+    color: var(--text-paragraph);
+}
+
+.skillset__card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.card__item{
+    flex: 1 0 40%;
+}
+
+.card__title{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 24px 0 12px;
+}
+
+
+
+
+
+
 

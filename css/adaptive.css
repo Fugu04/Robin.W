@@ -9,4 +9,11 @@
     padding: 0 15px;
   }
 
+    .skillset__container{
+        flex-direction: column;
+    }
+    .skillset__card{
+        margin-top: 40px;
+    }
+
 }
